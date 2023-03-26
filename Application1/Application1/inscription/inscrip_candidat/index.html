@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscription | page</title>
+</head>
+
+<body>
+    
+    <div class="wrapper" style="background-color: rgb(95, 92, 92);">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 bg-dark side-image">
+                    <div class="text">
+
+                    </div>
+                </div>
+                <div class="col-md-6 right" style="background-color: #333;">
+                    <div class="input-box">
+
+                        <header style="color: aliceblue;">Inscription-Candidat</header>
+                        
+                        <form method="POST" action="inscript.php">
+                            
+                            <label style="font-size: 27px;margin-top: 35px; margin-bottom: 15px; color: aliceblue; border-radius: 15px;" class="lab" for="domaine">Domaine</label>
+                            
+                            <div class="input-field">
+                            <select style="background-color: #FFEBB7;" name="domaine" id="domaine">
+                                <option value="Software Engineer">Software Engineer</option>
+                                <option value="Data Scientist">Data Scientist</option>
+                                <option value="Project Manager">Project Manager</option>
+                                <option value="UX Designer">UX Designer</option>
+                                <option value="Web Developer">Web Developer</option>
+                            </select>
+                            </div>
+                            
+                            <label class="la" style="font-size: 27px;margin-bottom: 15px;margin-top: 35px;color: aliceblue;border-radius: 15px;" for="profil">Profil</label>
+                            
+                            <div class="input-field">
+                            <select style="background-color: #FFEBB7;" name="profil" id="profil">
+                                <option value="Injénieur">Ingénieur</option>
+                                <option value="Technicien">Technicien</option>
+                                
+                            </select>
+                            </div>
+                            <div class="input-field">
+                                <input style="border-bottom: none; margin-top: 35px; color: aliceblue; " class="btn btn-outline-dark" type="submit" name="valider" class="submit" value="Sign Up">
+                            </div>
+                        </form>
+                        
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

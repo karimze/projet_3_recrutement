@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Connexion | page</title>
+</head>
+<body >
+
+    <div class="wrapper" style="background-color: rgb(95, 92, 92);">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 bg-dark side-image">
+                    
+                </div>
+                <div class="col-md-6 right" style="background-color: #333;">
+                    <div class="input-box">
+
+                        <header style="color: aliceblue;">Connexion</header>
+                        
+                        <form method="POST" action="connexion.php">
+
+                            <div class="hae">
+                                <input type="radio" id="candidat" name="person" value="candidat">
+                                <label for="candidat" style="color: aliceblue;">Candidat</label><br>
+                                <input type="radio" id="recruteur" name="person" value="recruteur">
+                                <label for="recruteur" style="color: aliceblue;">Recruteur</label><br>
+                            </div>
+
+                            <div class="input-field">
+                                <input type="text" class="input" style="color: aliceblue;" name="Email" required autocomplete="off">
+                                <label for="email" style="color: aliceblue;">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" class="input" style="color: aliceblue;" name="Password" required>
+                                <label for="password" style="color: aliceblue;">Mot de passe</label>
+                            </div>
+                            <div class="input-field">
+                                <input style="border-bottom: none; color: aliceblue;" type="submit" name="valider" class=" btn btn-outline-dark"  value="Sign In">
+                            </div>
+                        </form>
+                        
+                        <div class="signin">
+                            <span style="color: aliceblue;">Don't have an account ? <a href="..\inscription\index.html" >S'inscrire</a></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

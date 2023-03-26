@@ -1,0 +1,81 @@
+
+#i {
+    display:flex; /*organiser la photo en centre*/
+    width:100%;/*le width par defaut est 100 donc en la reger en 50%*/
+    padding: 4% 2%;
+    box-sizing:border-box;/*mettre la photo et le contenu dans un box */
+    height: 75vh;/*selon le width le height s'est reglé*/
+  }
+  .box {
+    flex: 1;
+   overflow: hidden;/*empèche la photo d'aparaitre tout entière dans le box l'orsqu'on transmet la souris la souris sur elle*/
+    transition: .20s;/*animation durée*/
+    margin: 0 2%;/**/
+    box-shadow:0 20px 30px rgba(9, 100, 170, 0.767);/*donner le shadow au box qu'on est entrain de preparer*/
+    line-height: 0;/**/
+  }
+  .box > img {
+    width: 200%;/*agrondir la photo plus que sa taille lorsqu'on met la souris dans la photo au sein du box */
+    height: calc(100% - 15vh);/*rendre l'animation de photo de 15vh de taille normal 200%wisth au 100% du box*/
+    object-fit: cover;  /**/
+    transition: .50s;
+  }
+  .box > span {
+    margin-top:1px;
+    font-size: 5vh;/*?*/
+    display: block;/*display et text-align fait centrer le text au centre de box dans son margin */
+    text-align: center;/**/
+    height: 5vh;/*le height de mot et 10vh du box*/
+    line-height: 4.2;/*?*/
+  }
+  
+  .box:hover {
+    flex: 1 1 50%;/**/
+ }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+  .ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #402d2d;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 2em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400px;
+    width: 1em;
+    margin-right: -0.1em; /*l'espace a droite de &*/
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+  
+   
